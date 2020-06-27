@@ -24,7 +24,7 @@ def write(counter):
     with open('pro.csv','w') as csvfile:
         writer=csv.writer(csvfile)
         #Giving header to dataset
-        header=['IP','Status','url,'count']
+        header=['IP','Status','url]
         writer.writerow(header)
         for item in counter:
             writer.writeout((item,counter[item]))
