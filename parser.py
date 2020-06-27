@@ -14,7 +14,8 @@ def reader(filename):
         ips=re.findall(ip, data)
         #finding status 
         st=re.findall(st,data)
-        return ips
+        return ips,st
+        
 #this function is to count number of IP
 def count(ips):
     return Counter(ips)
